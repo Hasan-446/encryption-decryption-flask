@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image encryption and decryption</title>
+    <style>
+        .container {
+           margin: 0 auto;
+           width: 50%;
+           text-align: center;
+           
+       }
+       .decrypt_button, .home_button, .download_button {
+        border: 2px;
+        color: white;
+        padding: 8px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 500px; 
+        margin: 4px 2px;
+        cursor: pointer;
+        background-color: #008CBA;
+        transition-duration: 0.4s;
+        
+       }
+       .home_button,.download_button{
+           font-size: 12px;
+           text-transform: capitalize;
+       }
+       .container h1{
+           font-style:normal;
+           color: #008CBA;
+           font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+           
+           padding: 16px 16px;
+           text-transform: uppercase;
+           letter-spacing: 2px;
+       }
+       .container h2{
+           font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       }
+       .file_option {
+           text-align-last: center;
+
+       }
+       .decrypt_button:hover {
+        background-color: white;
+        color: #008CBA;
+
+       }
+      
+
+       
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>decryption</h1>
+        <form enctype="multipart/form-data" method="post">
+            <h2>password:</h2>
+            <input type="text" name="pass" required>
+            <br>
+            <h2>upload file:</h2>
+            <input type="file" class="file_option" name="file" required>
+            <br>
+            <br>
+            <input type="submit" value="decrypt" class="decrypt_button">
+
+        </form>
+        <br>
+        <br>
+
+        
+    {% if download_button %}
+        <a href="/{{value}}" target="blank" class="download_button">Download</a>
+    {% endif %}    
+        <br>
+        <a href="/" target="blank" class="home_button">back to home</a>
+    
+    </div>
+
+  
+</body>
+</html>
