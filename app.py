@@ -17,9 +17,9 @@ if not os.path.exists(UPLOAD_PATH):
         
 
 def pad_msg(file): 
-            while len(file)% 16 != 0:
-                file = file + b'0'
-            return file
+    while len(file)% 16 != 0:
+        file = file + b'0'
+    return file
 
 
 
