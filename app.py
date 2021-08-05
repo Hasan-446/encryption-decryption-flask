@@ -8,7 +8,13 @@ import os
 app = Flask(__name__)
 
 
+
+basepath = os.path.dirname(__file__)
 Upload_Folder = "uploads"
+UPLOAD_PATH = os.path.join(basepath,Upload_Folder)
+if not os.path.exists(UPLOAD_PATH):
+    os.mkdir(UPLOAD_PATH)
+        
 
 def pad_msg(file): 
             while len(file)% 16 != 0:
