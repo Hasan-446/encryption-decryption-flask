@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>image encryption and decryption</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
     <style>
-       .container {
-           margin: 0 auto;
-           width: 50%;
-           text-align: center;
-           
-       }
-       .container h1{
-           font-style:normal;
-           color: 	#FF7F50;
-           font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-           
-           padding: 16px 16px;
-           text-transform: uppercase;
-           letter-spacing: 2px;
-       } 
-       .encrypt_button,.decrypt_button{
+      .container {
+        margin: 0 auto;
+        width: 50%;
+        text-align: center;
+      }
+      .container h1 {
+        font-style: normal;
+        color: #ff7f50;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+        padding: 16px 16px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      .encrypt_button,
+      .decrypt_button {
         border: 2px;
         color: white;
         padding: 16px 32px;
@@ -30,38 +31,27 @@
         display: inline-block;
         font-size: 25px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-weight: 500px; 
+        font-weight: 500px;
         margin: 4px 2px;
         cursor: pointer;
-        background-color: #FF7F50;
+        background-color: #ff7f50;
         transition-duration: 0.4s;
-        
-       }
-       .encrypt_button:hover , .decrypt_button:hover{
+      }
+      .encrypt_button:hover,
+      .decrypt_button:hover {
         background-color: white;
-        color: rgb(255,99,71);
-
-       }
-
-       
+        color: rgb(255, 99, 71);
+      }
     </style>
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="container">
-        <h1>encryption and decryption</h1>
+      <h1>encryption and decryption</h1>
 
-        <a href="/encrypt" class="encrypt_button">Encrypt</a>
-        <br>
-        <br>
-        <a href="/decrypt" class="decrypt_button">Decrypt</a>
-
+      <a href="/encrypt" class="encrypt_button">Encrypt</a>
+      <br />
+      <br />
+      <a href="/decrypt" class="decrypt_button">Decrypt</a>
     </div>
-
-    
-
-    
-     
-    
-</body>
+  </body>
 </html>
